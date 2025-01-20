@@ -32,7 +32,7 @@
   line-height: 30px;
   margin: 32px 0;
 }
-.description button {
+.button-primary {
   background-color: rgba(229, 84, 115, 1);
   font-size: 20px;
   font-weight: bold;
@@ -133,6 +133,35 @@
   margin-bottom: 25px;
 }
 
+/* sign-up style */
+.sign-up {
+  background-color: rgba(229, 84, 115, 0.05);
+  display: flex;
+  margin: auto 0;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.sign-up-desc {
+  max-width: 594px;
+  text-align: center;
+  margin: auto 0;
+}
+.sign-up-desc h4 {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(39, 39, 39, 1);
+}
+.sign-up-desc h4 span {
+  color: rgba(229, 84, 115, 1);
+}
+.sign-up-desc p {
+  font-size: 18px;
+  color: rgba(39, 39, 39, 0.6);
+  padding: 25px;
+}
+
 /* media style */
 @media (max-width: 992px) and (min-width: 578px) {
   .description h1 {
@@ -143,7 +172,7 @@
     margin: 10px 0;
     line-height: 20px;
   }
-  .description button {
+  .button-primary {
     font-size: 16px;
     font-weight: bold;
     padding: 10px 20px;
