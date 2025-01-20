@@ -4,11 +4,12 @@
   font-style: normal;
   font-variation-settings: "width" 100;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
+
+/* style header */
 .header {
   display: flex;
   justify-content: center;
@@ -50,6 +51,8 @@
 .container > img {
   width: 65%;
 }
+
+/* style card */
 .flower {
   display: flex;
   justify-content: center;
@@ -60,10 +63,8 @@
 }
 .flower-desc {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
-  /* width: 100%; */
 }
 .title {
   font-size: 3vw;
@@ -81,18 +82,17 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 75%;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .flower-card {
   display: flex;
-  /* justify-content: end; */
   align-items: center;
   flex-direction: column;
 }
-/* .flower-card > div {
-  background-color: aqua;
-} */
+.flower-card a {
+  color: rgba(39, 39, 39, 1);
+}
 .flower0 {
   display: flex;
   width: 464px;
@@ -112,6 +112,45 @@
 .flower3 {
   background-color: rgba(71, 125, 17, 0.15);
 }
+
+/* style support */
+.support {
+  max-width: 1440px;
+  background-color: rgba(39, 39, 39, 0.05);
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 85px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 100px;
+}
+.support div {
+  text-align: center;
+}
+.support div img {
+  margin-bottom: 25px;
+}
+
+/* media style */
+@media (max-width: 992px) and (min-width: 578px) {
+  .description h1 {
+    font-size: 40px;
+  }
+  .description p {
+    font-size: 16px;
+    margin: 10px 0;
+    line-height: 20px;
+  }
+  .description button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .header {
     flex-direction: column;
