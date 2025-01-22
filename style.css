@@ -120,7 +120,7 @@
   background-color: rgba(39, 39, 39, 0.05);
   border-radius: 8px;
   margin: 0 auto;
-  padding: 85px;
+  padding: 85px 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -129,9 +129,6 @@
 }
 .support div {
   text-align: center;
-}
-.support div img {
-  margin-bottom: 25px;
 }
 
 /* sign-up style */
@@ -183,6 +180,51 @@
 }
 .instagram div img {
   padding: 0 12px;
+}
+
+/* news latter style */
+.news-latter {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(flower-asset/Rectangle\ 9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: 122px 0;
+  margin-bottom: 100px;
+}
+.news-latter h4 {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(39, 39, 39, 1);
+}
+.news-latter p {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(39, 39, 39, 0.6);
+  padding: 16px 0 48px;
+}
+.news-latter input {
+  width: 700px;
+  height: 64px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+.news-latter input::placeholder {
+  color: rgba(39, 39, 39, 0.6);
+}
+.news-latter button {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(229, 84, 115, 1);
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 31px;
+  margin-top: 20px;
 }
 
 /* media style */
