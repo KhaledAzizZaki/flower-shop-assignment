@@ -16,6 +16,7 @@
   align-items: center;
   background-color: rgba(229, 84, 115, 0.1);
   height: 90vh;
+  /* flex-wrap: wrap; */
 }
 .description {
   width: 50%;
@@ -142,6 +143,7 @@
   padding: 100px 0;
   gap: 100px;
   flex-wrap: wrap;
+  margin-bottom: 100px;
 }
 .sign-up-desc {
   max-width: 594px;
@@ -160,6 +162,27 @@
   font-size: 18px;
   color: rgba(39, 39, 39, 0.6);
   padding: 25px;
+}
+
+/* instagram style */
+.instagram {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.instagram h4 {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(39, 39, 39, 1);
+}
+.instagram p {
+  font-size: 18px;
+  color: rgba(39, 39, 39, 0.6);
+  padding: 24px 0 48px;
+  max-width: 594px;
+  margin: 0 auto;
+}
+.instagram div img {
+  padding: 0 12px;
 }
 
 /* media style */
