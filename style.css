@@ -163,6 +163,8 @@
 
 /* instagram style */
 .instagram {
+  max-width: 1440px;
+  margin: 0 auto;
   text-align: center;
   margin-bottom: 100px;
 }
@@ -174,12 +176,15 @@
 .instagram p {
   font-size: 18px;
   color: rgba(39, 39, 39, 0.6);
-  padding: 24px 0 48px;
+  padding: 24px 0 36px;
   max-width: 594px;
   margin: 0 auto;
 }
-.instagram div img {
-  padding: 0 12px;
+.instagram div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* news latter style */
@@ -227,14 +232,47 @@
   margin-top: 20px;
 }
 
+/* footer style */
+.footer {
+  /* margin: 0 auto; */
+  text-align: center;
+  background-color: rgba(17, 16, 16, 1);
+}
+.footer h4 {
+  font-size: 48px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 1);
+  padding-top: 100px;
+}
+.footer h4 span {
+  color: rgba(229, 84, 115, 1);
+}
+.footer-para {
+  max-width: 625px;
+  margin: 24px auto 32px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.footer-rights {
+  color: rgba(255, 255, 255, 0.4);
+  padding-bottom: 100px;
+}
+
 /* media style */
 @media (max-width: 992px) and (min-width: 578px) {
+  .header {
+    flex-direction: column;
+  }
+  .description {
+    width: auto;
+    padding: 12.5% 12.5% 0 12.5%;
+  }
   .description h1 {
     font-size: 40px;
   }
   .description p {
     font-size: 16px;
-    margin: 10px 0;
+    margin: 20px 0;
     line-height: 20px;
   }
   .button-primary {
@@ -242,6 +280,12 @@
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 5px;
+  }
+  .container {
+    width: 50%;
+  }
+  .container > img {
+    width: 80%;
   }
 }
 
@@ -261,5 +305,8 @@
     width: 100%;
     margin: 0;
     justify-content: center;
+  }
+  .title {
+    font-size: 25px;
   }
 }
